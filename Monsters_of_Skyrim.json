@@ -1,0 +1,2228 @@
+{
+	"siteVersion": "1.133.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "MonstersofSkyrim",
+				"abbreviation": "MoS",
+				"full": "Monsters of Skyrim",
+				"url": "https://homebrewery.naturalcrit.com/share/B1OODGs_b",
+				"authors": [
+					"Luka Vodanovic"
+				],
+				"convertedBy": [
+					"LimeBread"
+				]
+			}
+		],
+		"dateAdded": 1627687424,
+		"dateLastModified": 1627687424
+	},
+	"monster": [
+		{
+			"name": "Flame Atronach",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "elemental",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(hover)"
+				}
+			},
+			"str": 8,
+			"dex": 20,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 20,
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing",
+						"poison damage vulnerabilities cold condition immunities exhaustion",
+						"grappled",
+						"paralyzed",
+						"petrified",
+						"poisoned",
+						"prone",
+						"restrained",
+						"unconscious"
+					],
+					"note": "from nonmagical attacks damage immunities fire",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Illumination",
+					"entries": [
+						"The ire atronach sheds bright light in a 30-foot radius and dim light to an additional 30 feet."
+					]
+				},
+				{
+					"name": "Water Susceptibility",
+					"entries": [
+						"For every 5 feet the fire atronach moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 60ft., one target. {@h}19 (4d6 + 5) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire , the target takes 5 (1d10) fire damage at the start of each of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"C"
+			],
+			"miscTags": [
+				"AOE"
+			]
+		},
+		{
+			"name": "Frost Atronach",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "L",
+			"type": "elemental",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d10 + 50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 21,
+			"int": 10,
+			"wis": 15,
+			"cha": 8,
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing",
+						"poison damage vulnerabilities fire condition immunities exhaustion",
+						"grappled",
+						"paralyzed",
+						"petrified",
+						"poisoned",
+						"prone",
+						"restrained",
+						"unconscious"
+					],
+					"note": "from nonmagical attacks damage immunities cold",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Frost atronach make 2 slam attacks.",
+						"Frost cloak. Each creature that starts its turns within 5 feet of the frost atronach takes 3 (1d6) points of cold damage.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft., one target. {@h}13 (2d8 + 4) bludgeoning damage. Ice-Breaker. As an action, a frost atronach can smash at the ground, sending ripples of earth and ice around it. All creatures with 5ft. of the atronach must make a {@dc 15} Strength saving throw. On a failure, they take 14 (4d6) cold damage and are knocked {@condition prone}."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Storm Atronach",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "L",
+			"type": "elemental",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 210,
+				"formula": "20d10 + 100"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 20,
+			"int": 14,
+			"wis": 12,
+			"cha": 19,
+			"skill": {
+				"perception": "+4",
+				"arcana+5damageresistances": "bludgeoning",
+				"andslashingfromnonmagicalattacksdamageimmunities": "electricity",
+				"poisonconditionimmunities": "exhaustion"
+			},
+			"senses": [
+				"darkvision 60ft.",
+				"storm atronach explodes in a burst of sound. all creatures within 30ft. must make a dc 16 constitution saving throw or take 28 (8d6) points of thunder damage."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Storm atronach makes 2 slam attacks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Lightning bolt Storm atronach releases a bolt of lightning",
+					"entries": [
+						"All creatures in a 100-foot long, 5ft. wide line must make a {@dc 16} Dexterity saving throw or take 28 (8d6) points of lightning damage. A successful saving throw halves the damage.",
+						"Chain lightning Storm atronach chooses 4 creatures with 150ft. that it can see. Those creatures must make a {@dc 16} Dexterity saving throw or take 35 (10d6) points of lightning damage. A successful saving throw halves the damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft., one target. {@h}12 (2d8 + 3) bludgeoning damage"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Chaurus",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "12d10 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 20,
+			"int": 6,
+			"wis": 11,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"athletics+6conditionimmunitiespoisoneddamageimmunities": "poison"
+			},
+			"senses": [
+				"darkvision 120ft.",
+				"cannot speak challenge 6 (2300 xp)"
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If Chaurus moves at least 10 feet straight toward a creature and then hits it with its bite attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the chaurus can make another attack with its bite against it as a bonus action.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5ft., one target. {@h}8 (1d10+3) piercing damage plus 27 (6d8) poison damage.",
+						"Poison spit (recharge 5-6). The chaurus exhales poisonous liquid in a 30-foot cone. Each creature in that area must make a {@dc 15} Constitution saving throw, taking 27 (6d8) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Chaurus Reaper",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 184,
+				"formula": "16d10 + 96"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 22,
+			"int": 8,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"athletics+9conditionimmunitiespoisoneddamageimmunitiespoisondamageresistancescolddamagevuilnerabilities": "fire"
+			},
+			"senses": [
+				"darkvision 120ft.",
+				"cannot speak challenge 10 (5900 xp)"
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If Chaurus moves at least 10 feet straight toward a creature and then hits it with its bite attack on the same turn, that target must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the chaurus can make another attack with its bite against it as a bonus action.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5ft., one target. {@h}13 (2d8+5) piercing damage plus 45 (10d8) poison damage.",
+						"Poison spit (recharge 5-6). The chaurus exhales poisonous liquid in a 40-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Chaurus Hunter fledgling",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 147,
+				"formula": "14d10 + 70"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 50
+			},
+			"str": 12,
+			"dex": 19,
+			"con": 20,
+			"int": 0,
+			"trait": [
+				{
+					"name": "7(-2) \t13 (+1) 5 (-3)",
+					"entries": [
+						"Skills Perception +4, Athletics +4",
+						"Condition Immunities {@condition poisoned}",
+						"Damage Immunities poison"
+					]
+				},
+				{
+					"name": "Senses Darkvision 120ft",
+					"entries": [
+						", Passive Perception 14",
+						"Languages Falmer, cannot speak",
+						"Challenge 8 (3900 XP)",
+						"Actions"
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft., one target. {@h}13 (2d8+4) piercing damage plus 45 (10d8) poison damage.",
+						"Poison shot. The fledgling shoots poison from its mouth at the targeted creature. Ranged weapon attack: {@hit 7} to hit, reach 30ft., one target. {@h}54 (12d8) poison damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Chaurus Hunter",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 230,
+				"formula": "20d10 + 120"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"str": 21,
+			"dex": 19,
+			"con": 20,
+			"int": 9,
+			"wis": 15,
+			"cha": 8,
+			"skill": {
+				"perception": "+7",
+				"athletics+10conditionimmunitiespoisoneddamageimmunitiespoisondamageresistances": "cold"
+			},
+			"senses": [
+				"darkvision 180ft.",
+				"cannot speak challenge 13 (10,000 xp)"
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Chaurus Hunter makes 2 attacks: one with its bite and one with its sting.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5ft, one target. {@h}14 (2d8+5) piercing damage, and the target must make a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the chaurus can make another attack with its bite against it as a bonus action."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10ft., one target. {@h}15 (3d6+5) piercing damage plus 45 (10d8) poison damage.",
+						"Poison spit (recharge 5-6). The chaurus shoots poisonous liquid in a 60-foot cone. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 63 (14d8) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Draugr",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 15,
+				"formula": "2d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 11,
+			"cha": 5,
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"immune": [
+				"poison damage resistances cold damage vulnerabilities fire condition immunities poisoned"
+			],
+			"trait": [
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a longsword and a shield, draugr gets an additonal +2 to its AC.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ancient Nord Axe",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5ft., one target. {@h}5 (1d6 + 2) slashing damage."
+					]
+				},
+				{
+					"name": "Ancient Nord Bow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, reach 5ft., one target. {@h}6 (1d8 + 1) piercing damage."
+					]
+				},
+				{
+					"name": "Ancient Nord Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5ft., one target. {@h}9 (2d6 + 2) slashing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Restless Draugr",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 17,
+			"int": 7,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception+3damageimmunitiespoisondamageresistancescolddamagevulnerabilitiesfireconditionimmunities": "poisoned"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a sword and a shield, Restless draugr gets an additonal +2 to its AC, but cannot use Frostbite."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Restless draugr makes 2 attacks with its chosen weapon.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ancient Nord Sword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5ft., one target. {@h}7 (1d8 + 3) slashing damage."
+					]
+				},
+				{
+					"name": "Ancient Nord Bow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, reach 5ft., one target. {@h}6 (1d8 + 2) piercing damage."
+					]
+				},
+				{
+					"name": "Ancient Nord Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5ft., one target. {@h}10 (2d6 + 3) slashing damage."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 3} to hit, reach 20ft., one target. {@h}6 (1d12) cold damage, and the target's speed is reduced by 5ft. for 1 round. Restless Draugr can use its action on subsequent turns to automatically deal this damage and reduce the target's speed. This is a concentration spell that lasts up to 1 minute."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Draugr Wight",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d8 + 68"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 18,
+			"int": 7,
+			"wis": 15,
+			"cha": 5,
+			"skill": {
+				"perception+5damageimmunitiespoisondamageresistancescolddamagevulnerabilitiesfireconditionimmunities": "poisoned"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a sword and a shield, draugr Wight gets an additonal +2 to its AC, but cannot make spell attacks."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Draugr Wight makes 2 Ancient Nord Sword attacks and 1 spell attack.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ancient Nord Sword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5ft., one target. {@h}7 (1d8 + 3) slashing damage."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, reach 20ft., one target. {@h}6 (1d12) cold damage, and the target's speed is reduced by 10ft. for 1 round. Draugr Wight can automatically deal this damage by using its spell attack and reduce the target's speed. This is a concentration spell that lasts up to 1 minute.",
+						"Ice spike. Ranged Spell Attack: {@hit 5} to hit, reach 40ft., one target. {@h}6 (1d12) cold damage and 4 (1d8) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Draugr Scourge",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 20,
+			"int": 10,
+			"wis": 19,
+			"cha": 5,
+			"skill": {
+				"perception+12damageimmunitiespoisondamageresistancescolddamagevulnerabilitiesfireconditionimmunities": "poisoned"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Brutal",
+					"entries": [
+						"Draugr Scourge's weapons deal an additional 3 damage on each successful hit. Additionally, Draugr Scourge can use Strength, instead of Charisma, to determine the DC of its Dragon Shouts."
+					]
+				},
+				{
+					"name": "Perceptive",
+					"entries": [
+						"Draugr Scourge adds double its proficiency bonus on Perception checks."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a sword and a shield, Draugr Scourge gets an additonal +2 to its AC, but cannot make spell attacks."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Draugr Scourge makes 2 Ancient Nord Sword attacks and 1 spell attack, or it can shout.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ancient Nord Sword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h}11 (1d8 + 7) slashing damage."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, reach 20ft., one target. {@h}6 (1d12) cold damage, and the target's speed is reduced by 15ft. for 1 round. Draugr Wight can automatically deal this damage by using its spell attack and reduce the target's speed. This is a concentration spell that lasts up to 1 minute.",
+						"Ice spike. Ranged Spell Attack: {@hit 5} to hit, reach 40ft., one target. {@h}13 (2d12) cold damage and 9 (2d8) piercing damage.",
+						"Unrelenting force: Fus-Ro-Dah. All creatures in a 30-foot cone in front of Draugr Scourge must make a {@dc 18} Strength saving throw or be flung to the the end of its reach, landing {@condition prone} upon landing. If the creature is Huge or larger, or a dragon, it is not flung, but loses its balance and falls {@condition prone} nevertheless on a failed save."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Draugr Overlord",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 225,
+				"formula": "25d8 + 125"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 10,
+			"wis": 19,
+			"cha": 5,
+			"skill": {
+				"perception+8damageimmunitiespoisondamageresistances": "cold",
+				"necroticdamagevulnerabilitiesfireconditionimmunities": "poisoned"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Brutal",
+					"entries": [
+						"Draugr Overlord's weapons deal an additional 5 damage on each successful hit, and it can use Strength instead of Dexterity on ranged attacks. Additionally, Draugr Overlord can use Strength, instead of Charisma, to determine the DC of its Dragon Shouts."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a sword and a shield, Draugr Overlord gets an additonal +2 to its AC."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Draugr Overlord makes 3 attacks with its chosen weapon.",
+						"Legendary Resistance (3/Day): If the draugr Overlord fails a saving throw, it can choose to succeed instead.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ancient Nord Sword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5ft., one target. {@h}14 (1d8 + 10) slashing damage."
+					]
+				},
+				{
+					"name": "Ancient Nord Bow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, reach 100/200ft., one target. {@h}14 (1d8 + 10) piercing damage.",
+						"Unrelenting force: Fus-Ro-Dah (Recharge 5-6). All creatures in a 30-foot cone in front of Draugr Overlord must make a {@dc 19} Strength saving throw or be flung to the the end of its reach, landing {@condition prone} upon landing. If the creature is Huge or larger, or a dragon, it is not flung, but loses its balance and falls {@condition prone} nevertheless on a failed save."
+					]
+				},
+				{
+					"name": "Disarm",
+					"entries": [
+						"Zun-Haal-Viik (Recharge 5-6). All targets in 1 30-foot cone in front of Dragur Overlord must make a {@dc 19} Strength saving throw or drop all weapons they're holding in their hands.",
+						"Legendary actions.",
+						"Draugr Overlord can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary actions are regained at the start of each turn."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Draugr Overlord moves up to its speed without provoking Opportunity Attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Draugr Overlord makes one Weapon Attack."
+					]
+				},
+				{
+					"name": "Parry (costs 2 actions)",
+					"entries": [
+						"Draugr Overlord adds its proficiency bonus to armor class until the beginning of its next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Draugr Deathlord",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 285,
+				"formula": "30d8 + 150"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 20,
+			"cha": 5,
+			"skill": {
+				"perception+10damageimmunities": "poison",
+				"necroticdamageresistancescolddamagevulnerabilitiesfireconditionimmunities": "poisoned"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Brutal",
+					"entries": [
+						"Draugr Deathlord's weapons deal an additional 5 damage on each successful hit, and it can use Strength instead of Dexterity on ranged attacks. Additionally, Draugr Overlord can use Strength, instead of Charisma, to determine the DC of its Dragon Shouts."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"When carrying a sword and a shield, Draugr Deathlord gets an additonal +2 to its AC."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Draugr Deathlord makes 4 attacks with its chosen weapon.",
+						"Ebony weapons. Ebony weapons add an additional {@hit 1} to hit and damage.",
+						"Cold aura. All creatures who begin their turn withing 5ft. of a draugr Deathlord take 3 (1d6) points of cold damage.",
+						"Legendary Resistance (3/Day): If the draugr Deathlord fails a saving throw, it can choose to succeed instead.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Ebony Sword",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5ft., one target. {@h}15 (1d8 + 11) slashing damage."
+					]
+				},
+				{
+					"name": "Ebony Bow",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, reach 100/200ft., one target. {@h}15 (1d8 + 11) piercing damage.",
+						"Unrelenting force: Fus-Ro-Dah (Recharge 5-6). All creatures in a 30-foot cone in front of Draugr Deathlord must make a {@dc 20} Strength saving throw or be flung to the the end of its reach, landing {@condition prone} upon landing. If the creature is Huge or larger, or a dragon, it is not flung, but loses its balance and falls {@condition prone} nevertheless on a failed save."
+					]
+				},
+				{
+					"name": "Disarm",
+					"entries": [
+						"Zun-Haal-Viik (Recharge 5-6). All targets in 1 30-foot cone in front of Dragur Deathlord must make a {@dc 20} Strength saving throw or drop all weapons they're holding in their hands.",
+						"Legendary actions.",
+						"Draugr Deathlord can take 3 Legendary Actions, choosing from the options below. Only one legendary action can be used at a time, and only at the end of another creature's turn. Spent legendary actions are regained at the start of each turn."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Draugr Deathlord moves up to its speed without provoking Opportunity Attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Draugr Deathlord makes one Weapon Attack."
+					]
+				},
+				{
+					"name": "Parry (costs 2 actions)",
+					"entries": [
+						"Draugr Deathlord adds its proficiency bonus to armor class until the beginning of its next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Dwarven Spider",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "S",
+			"type": "construct",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d6 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 4,
+			"wis": 11,
+			"cha": 7,
+			"immune": [
+				"poison",
+				"cold condition immunities charmed",
+				"poisoned senses passive perception 10 languages none challenge 3 (700 xp) magic resistance. dwarven spider has advantage on saving throws against spells and other magical effects."
+			],
+			"trait": [
+				{
+					"name": "Charging jump",
+					"entries": [
+						"When a dwarven spider is 10 feet away from its target, it can leap towards it as a part of the move action and make a single claw attack. If it hits, multiply the damage by 4.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dwarven spider makes 2 claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5ft., one target. {@h}6 (1d6 + 3) piercing damage.",
+						"Shock spit. Ranged Spell attack: {@hit 2} to hit, reach 15ft., one target. {@h}14 (4d6) lightning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Dwarven Sphere",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 18,
+			"int": 4,
+			"wis": 14,
+			"cha": 7,
+			"immune": [
+				"poison",
+				"cold condition immunities charmed",
+				"poisoned",
+				"all enchantment spells and spell-like effects",
+				"prone senses passive perception 12 languages none challenge 8 (3",
+				"900 xp) magic resistance. dwarven sphere has advantage on saving throws against spells and other magical effects."
+			],
+			"trait": [
+				{
+					"name": "Mobility",
+					"entries": [
+						"Dwarven spheres do not provoke Opportunity Attacks caused by moving out of their opponent's reach.",
+						"Guardian's design. Dwarven sphere's weapons always deal 3d8 points of damage.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dwarven sphere makes 3 attacks with its crossbow or arm blade, in any combination."
+					]
+				},
+				{
+					"name": "Arm Blade",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft., one target. {@h}17 (3d8 + 4) slashing damage."
+					]
+				},
+				{
+					"name": "Crossbow",
+					"entries": [
+						"Ranged Spell attack: {@hit 6} to hit, reach 120/320ft., one target. {@h}16 (3d8 + 3) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Dwarven Centurion",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "H",
+			"type": "construct",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 250,
+				"formula": "20d12 + 120"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 22,
+			"int": 4,
+			"wis": 16,
+			"cha": 7,
+			"skill": {
+				"perception+9damageimmunities": "poison",
+				"cold;": "bludgeoning",
+				"piercingandslashingdamagefromnonmagicalweaponsthataren'tadamantinedamageresistances": "bludgeoning",
+				"piercingslashingfromweaponsthataren'tadamantine;allspellsandspell-likeeffectsconditionimmunities": "charmed",
+				"poisonedsensespassiveperception19languagesnonechallenge17": "(18",
+				"000xp)magicresistance.dwarvencenturionhasadvantageonsavingthrowsagainstspellsandothermagical": "effects",
+				"andtakesonlyhalfdamagefrommagicalsources.legendaryresistance(3/day)ifthecenturionfailsasaving": "throw",
+				"itcanchoosetosucceed": "instead."
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dwarven centurion makes 3 attacks: 2 with its warhammer and 1 with its battleaxe."
+					]
+				},
+				{
+					"name": "Dwarven Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10ft., one target. {@h}30 (4d10 + 8) bludgeoning damage. The creature must then make a {@dc 18} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Dwarven Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10ft., one target. {@h}27 (3d12 + 8) slashing damage. The creature must then make a {@dc 18} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Steam Breath {@recharge 5}",
+					"entries": [
+						"TThe dragon turtle exhales scalding steam in a 90-foot cone. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 77 (22d6) fire damage on a failed save, or half as much damage on a successful one. Being Underwater doesn't grant Resistance against this damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Falmer",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 10,
+			"int": 9,
+			"wis": 14,
+			"cha": 6,
+			"conditionImmune": [
+				"blinded damage resistances cold senses passive perception 12 languages elvish challenge 1/4 (50 xp) blind adaption. the falmer are completely used to being blind",
+				"receive no penalties for that condition",
+				"except automatically failing all perception checks relying on sight. an invisible creature doesn't get advantage on its stealth checks against the falemr."
+			],
+			"action": [
+				{
+					"name": "Falmer sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5ft., one target. {@h}6 (1d8 + 2) slashing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also Unconscious while Poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.",
+						"Falmer bow. Melee Weapon Attack: {@hit 4} to hit, reach 5ft., one target. Hit 6 (1d8 + 2) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Falmer Skulker",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 9,
+			"wis": 16,
+			"cha": 6,
+			"skill": {
+				"perception+5conditionimmunitiesblindeddamageresistancescoldsensespassiveperception15languageselvishchallenge2(450xp)blindadaption.thefalmerarecompletelyusedtobeing": "blind",
+				"andreceivenopenaltiesforthat": "condition",
+				"exceptautomaticallyfailingallperceptionchecksrelyingonsight.aninvisiblecreaturedoesn'tgetadvantageonitsstealthchecksagainstthe": "falemr."
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Falmer Skulker makes 2 attacks with its sword, or 2 attacks with its bow.",
+						"Falmer sword. Melee Weapon Attack: {@hit 6} to hit, reach 5ft., one target. {@h}8 (1d8 + 4) slashing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also Unconscious while Poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.",
+						"Falmer bow. Melee Weapon Attack: {@hit 6} to hit, reach 5ft., one target. Hit 8 (1d8 + 4) piercing damage."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, reach 20ft., one target. {@h}6 (1d12) cold damage, and the target's speed is reduced by 5 feet for 1 round. Falmer Skulker can use its action on subsequent turns to automatically deal this damage and reduce the target's speed. This is a concentration spell that lasts up to 1 minute."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Falmer Nightprowler",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 9,
+			"wis": 18,
+			"cha": 6,
+			"skill": {
+				"perception+7conditionimmunitiesblindeddamageresistancescoldsensespassiveperception17languageselvishchallenge5": "(1",
+				"800xp)blindadaption.thefalmerarecompletelyusedtobeing": "blind",
+				"andreceivenopenaltiesforthat": "condition",
+				"exceptautomaticallyfailingallperceptionchecksrelyingonsight.aninvisiblecreaturedoesn'tgetadvantageonitsstealthchecksagainstthe": "falemr."
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Falmer Nightprowler makes 2 spell attacks: one with an Ice Spike and the other with Frostbite.",
+						"Falmer sword. Melee Weapon Attack: {@hit 7} to hit, reach 5ft., one target. {@h}5 (1d8 + 3) slashing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also Unconscious while Poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 20ft., one target. {@h}10 (1d12 + 4) cold damage, and the target's speed is reduced by 5 feet for 1 round. Falmer Skulker can use its action on subsequent turns to automatically deal this damage and reduce the target's speed. This is a concentration spell that lasts up to 1 minute."
+					]
+				},
+				{
+					"name": "Ice Spike",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, reach 40ft., one target. {@h}17 (2d12 + 4) cold damage and 8 (1d8 + 4) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Falmer Shadowmaster",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 18,
+			"int": 13,
+			"wis": 18,
+			"cha": 6,
+			"skill": {
+				"perception": "+8",
+				"stelath+9conditionimmunitiesblindeddamageresistancescoldsensespassiveperception18languageselvishchallenge8": "(3",
+				"900xp)blindadaption.thefalmerarecompletelyusedtobeing": "blind",
+				"andreceivenopenaltiesforthat": "condition",
+				"exceptautomaticallyfailingallperceptionchecksrelyingonsight.aninvisiblecreaturedoesn'tgetadvantageonitsstealthchecksagainstthe": "falemr."
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Falmer Shadowmaster makes 2 attacks with its bound sword and one spell attack.",
+						"Bound sword. Melee Weapon Attack: {@hit 9} to hit, reach 5ft., one target. {@h}14 (2d8 + 5) slashing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also Unconscious while Poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, reach 20ft., one target. {@h}10 (1d12 + 4) cold damage, and the target's speed is reduced by 10 feet for 1 round. Falmer Skulker can use its spell attack on subsequent turns to automatically deal this damage and reduce the target's speed. This is a concentration spell that lasts up to 1 minute."
+					]
+				},
+				{
+					"name": "Ice Spike",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, reach 40ft., one target. {@h}17 (2d12 + 4) cold damage and 9 (1d8 + 5) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Falmer Warmonger",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 20,
+			"int": 13,
+			"wis": 20,
+			"cha": 6,
+			"skill": {
+				"perception": "+10",
+				"stelath+10conditionimmunitiesblindeddamageresistancescoldsensespassiveperception20languageselvishchallenge11": "(7",
+				"200xp)blindadaption.thefalmerarecompletelyusedtobeing": "blind",
+				"andreceivenopenaltiesforthat": "condition",
+				"exceptautomaticallyfailingallperceptionchecksrelyingonsight.aninvisiblecreaturedoesn'tgetadvantageonitsstealthchecksagainstthe": "falemr."
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Falmer Warmonger makes 2 attacks with its bound sword, uses its Frostbite, and shoots an Ice Spike.",
+						"Bound sword. Melee Weapon Attack: {@hit 10} to hit, reach 5ft., one target. {@h}14 (2d8 + 5) slashing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be Poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also Unconscious while Poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake."
+					]
+				},
+				{
+					"name": "Frostbite",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, reach 20ft., one target. {@h}11 (1d12 + 5) cold damage, and the target's speed is reduced by 15 feet for 1 round. Falmer Skulker can use its spell attack on subsequent turns to automatically deal this damage and reduce the target's speed. This is a concentration spell that lasts up to 1 minute."
+					]
+				},
+				{
+					"name": "Ice Spike",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, reach 40ft., one target. {@h}18 (2d12 + 5) cold damage and 9 (1d8 + 5) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Frostbite spider",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"stealth+6sensesblindsight": "10ft.",
+				"darkvision": "60ft.",
+				"passiveperception10languagesnonechallenge1/2(100xp)spiderclimb.frostbitespidercanclimbdifficult": "surfaces",
+				"includingupsidedownon": "ceilings",
+				"withoutneedingtomakeanabilitycheck.websense.whileincontactwitha": "web",
+				"frostbitespiderknowstheexactlocationofanyothercreatureincontactwiththesame": "web."
+			},
+			"trait": [
+				{
+					"name": "Web Walker",
+					"entries": [
+						"Frostbitw spider ignores Movement restrictions caused by webbing.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5ft., one target. {@h}6 (1d6 + 3) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but Poisoned for 1 hour, even after regaining hit points, and is Paralyzed while Poisoned in this way."
+					]
+				}
+			],
+			"traitTags": [
+				"Web Walker"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Giant Frostbite spider",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "L",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 4,
+			"skill": {
+				"stealth+7sensesblindsight": "10ft.",
+				"darkvision": "60ft.",
+				"passiveperception11languagesnonechallenge5": "(1",
+				"800xp)spiderclimb.frostbitespidercanclimbdifficult": "surfaces",
+				"includingupsidedownon": "ceilings",
+				"withoutneedingtomakeanabilitycheck.websense.whileincontactwitha": "web",
+				"frostbitespiderknowstheexactlocationofanyothercreatureincontactwiththesame": "web."
+			},
+			"trait": [
+				{
+					"name": "Web Walker",
+					"entries": [
+						"Frostbite spider ignores Movement restrictions caused by webbing.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10ft., one target. {@h}8 (1d8 + 4) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 27 (6d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but Poisoned for 1 hour, even after regaining hit points, and is Paralyzed while Poisoned in this way.",
+						"Poison spit (Recharge 5-6). Ranged Weapon Attack: {@hit 5} to hit, reach 30ft., one target. {@h}36 (8d8) poison damage, and the target is {@condition poisoned} for 1 round."
+					]
+				}
+			],
+			"traitTags": [
+				"Web Walker"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Hagraven",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 97,
+				"formula": "13d8 + 39"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 17,
+			"int": 10,
+			"wis": 14,
+			"cha": 20,
+			"save": {
+				"wisdom": "+7",
+				"charisma": "+10",
+				"intimidate": "+10",
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"senses": [
+				"dakrvision 60ft.",
+				"elvish challenge 10 (5,900 xp) magic resistance. a hagraven has advantage on saving throws against spells and spell-like effects."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"A Hagraven is a 14th level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). She knows the following spells:",
+						"Cantrips (at will): firebolt, light, mage hand, prestidigitation",
+						"Other (always cast using 7th level spell slot) (14 slots): *magic missile, cure wounds, burning hands, mage armor, healing word, mirror image, misty step, scorching ray, counterspell, fly, fireball, stoneskin, cone of cold",
+						"Actions"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5ft., one target. {@h}7 (1d8+3) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Spriggan",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				{
+					"alignment": [
+						"N"
+					]
+				},
+				{
+					"alignment": [
+						"NX",
+						"NY",
+						"N"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 8,
+			"wis": 18,
+			"cha": 6,
+			"senses": [
+				"the spriggan can use 10 ft. of his movement to step magically into one living tree within her reach and emerge from a second living tree within 60 ft. of the first tree",
+				"appearing in an unoccupied space within 5 ft. of the second tree. both trees must be large or bigger."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"When dropped to 5 hit points or fewer but not instantly killed, the spriggan regenerates 52 (8d8 + 16) hit points. This ability can only be used once per day.",
+						"Actions",
+						"Swarm of bees (1/day). As an Action, the spriggan can summon a swarm of bees to assist it in combat. For the swarm use the swarm of instects stat block: http://www.orcpub.com/dungeons-and-dragons/5th-edition/monsters/swarm-of-insects"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5ft., one target. {@h}7 (1d8+3) piercing damage and 18 (4d8) poison damage, and the target must succeed on a {@dc 14} Constitution saving throw or be {@condition poisoned} for 1 hour."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Troll",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d8 + 50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 20,
+			"int": 7,
+			"wis": 9,
+			"cha": 7,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The troll regains 10 hit points at the start of its turn. If the troll takes fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+						"Brutal strikes. The troll adds double its Strength modifier on damage rolls with its claws.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes 2 claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5ft., one target. Hit 15 (2d6 + 8) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Frost Troll",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d8 + 75"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 24,
+			"dex": 13,
+			"con": 20,
+			"int": 7,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"vulnerable": [
+				"fire damage resistances cold skills perception +4"
+			],
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The frost troll regains 15 hit points at the start of its turn. If the frost troll takes fire damage, this trait doesn't function at the start of the troll's next turn. The frost troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+						"Brutal strikes. The frost troll adds double its Strength modifier on damage rolls with its claws.",
+						"Actions"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The frost troll makes 2 claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5ft., one target. Hit 23 (2d8 + 14) slashing damage, and the target must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Wisp",
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "T",
+			"type": "fey",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "1d4 + 5"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 4,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": null,
+			"conditionImmune": [
+				"grappled",
+				"paralyzed",
+				"charmed",
+				"prone damage resistances cold"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"While another ally of the wisp is 5ft. within the target, the wisp has advantage on its attack rolls.",
+						"Actions",
+						"Wisp's kiss. Melee Weapon Attack: {@hit 5} to hit, reach 5ft., one target. Hit 5 (1d6 + 2) necrotic damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			]
+		},
+		{
+			"name": "Wispmother",
+			"isNamedCreature": true,
+			"source": "MonstersofSkyrim",
+			"page": 0,
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 100,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 0,
+			"spellcasting": [
+				{
+					"name": "    Spellcasting",
+					"headerEntries": [
+						"Wispmother is a 9th-level spellcaster. Her spellcasting ability is Wisdom (Spell save {@dc 17}, {@hit 9} to hit with spell attacks). She knows the following spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell ray of frost}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell frostbite|XGE} (cold damage witch bolt)",
+								"{@spell charm person}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell levitate}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell Fireball}",
+								"{@spell counterspell}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell ice storm}",
+								"{@spell blight}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell cone of cold}"
+							]
+						}
+					},
+					"footerEntries": [
+						"Actions"
+					],
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": ") \t20 (+5)",
+					"entries": [
+						")",
+						"Skills Acrobatics +9, Arcana +4, Perception +5, Stealth +9",
+						"Condition Immunities {@condition grappled}, {@condition paralyzed}, {@condition charmed}, {@condition prone}",
+						"Damage resistances cold",
+						"Senses darkvision 60ft., passive Perception 15",
+						"Languages Sylvan",
+						"Challenge 8 (3,900 XP)"
+					]
+				},
+				{
+					"name": "Open Chin Choke",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5ft., one target. Hit 5 (1d6 + 2)"
+					]
+				},
+				{
+					"name": "Scorpion Flurry",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5ft., one target. Hit 5 (1d6 + 2)"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			]
+		}
+	]
+}
